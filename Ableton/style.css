@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 2em;
+    padding: 10px;
+}
+
+nav > div > p {
+    display: inline;
+    margin: 0 1.5em;
+}
+
+nav > div > p > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+nav > div > p > svg {
+    vertical-align: text-bottom;
+}
+
+.flex {
+    display: flex;  
+}
+
+
