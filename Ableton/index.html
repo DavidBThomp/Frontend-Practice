@@ -12,35 +12,51 @@
 
     <!-- Fonts -->
 
-
 </head>
 
 <body>
-    <nav>
-        <div>
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                    style="fill: rgba(0, 0, 0, 1);">
-                    <path
-                        d="M12.74 2.32a1 1 0 0 0-1.48 0l-9 10A1 1 0 0 0 3 14h2v7a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-7h2a1 1 0 0 0 1-1 1 1 0 0 0-.26-.68z">
-                    </path>
-                </svg></p>
-            <p><a href="#">Live</a></p>
-            <p><a href="#">Push</a></p>
-            <p><a href="#">Link</a></p>
-            <p><a href="#">Shop</a></p>
-            <p><a href="#">Packs</a></p>
-            <p><a href="#">Help</a></p>
-            <p><a href="#">More +</a></p>
-        </div>
-        <div>
-            <p><a href="#">Try for Free</a></p>
-            <p><a href="#">Account</a></p>
-            <p><a href="#">Logout</a></p>
-        </div>
-    </nav>
-    <hr>
-    <main>
+    <header>
+        <nav>
+            <img src="logo.svg" alt="logo" id="logo">
+            <ul class="navHolder">
+                <li class="navItem"><a href="#">Live</a></li>
+                <li class="navItem"><a href="#">Push</a></li>
+                <li class="navItem"><a href="#">Link</a></li>
+                <li class="navItem"><a href="#">Shop</a></li>
+                <li class="navItem"><a href="#">Packs</a></li>
+                <li class="navItem"><a href="#">Help</a></li>
+                <li class="navItem"> <a href="#">More +</a></li>
+            </ul>
+        </nav>
 
+        <ul class="navHolder">
+            <li class="navItem"><a href="#">Try for Free</a></li>
+            <li class="navItem"><a href="#">Account</a></li>
+            <li class="navItem"><a href="#">Logout</a></li>
+        </ul>
+    </header>
+    <hr>
+
+    <main>
+        <div class="container">
+            <div class="topSection">
+                <a href="#" class="sectionName fontColorOrange">About</a>
+                <a href="#" class="sectionName">Jobs</a>
+
+                <div class="textOverImage">
+                    <img src="fullBanner.jpg" alt="programmer at desk" id="fullBanner">
+                    <div class="textOverImageCenter fontColorOrange">Hello There</div>
+                </div>
+            </div>
+
+            <section id="groupText">
+                <p>We make <a href="#">Live</a>, <a href="#">Push</a> and <a href="#">Link</a> — unique software and
+                    hardware for music creation and performance. With these products, our community of users creates
+                    amazing things</p>
+                <p>Ableton was founded in 1999 and released the first version of Live in 2001. Our products are used by
+                    a community of dedicated musicians, sound designers, and artists from across the world.</p>
+            </section>
+        </div>
     </main>
 
     <footer>

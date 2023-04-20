@@ -1,36 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+/* Google Font */
+/* font-family: 'Roboto', sans-serif; */
+
+
 * {
     box-sizing: border-box;
-}
-
-html, body {
     margin: 0;
     padding: 0;
 }
 
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
 nav {
     display: flex;
-    justify-content: space-between;
-    margin: 1em 2em;
-    padding: 10px;
+    align-items: center;
 }
 
-nav > div > p {
-    display: inline;
-    margin: 0 1.5em;
-}
-
-nav > div > p > a {
-    text-decoration: none;
-    color: black;
+li, a, button {
     font-size: 1.5rem;
+    text-decoration: none;
+    color: black
 }
 
-nav > div > p > svg {
-    vertical-align: text-bottom;
+header {
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    padding: 15px 30px;
 }
 
-.flex {
-    display: flex;  
+#logo {
+    cursor: pointer;
+    margin: 0 30px 0 0;
+    height: 50px;
 }
 
+.navItem {
+    list-style: none;
+    display: inline-block;
 
+}
+
+.navItem > a {
+    transition: all 0.3s ease 0s;
+    padding: 0px 15px;
+}
+
+nav > ul > li > a:hover {
+    color: blue;
+}
+
+.sectionName {
+    font-size: 1.5rem;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.fontColorOrange {
+    color: #ff764d
+}
+
+.container {
+    margin: 30px;
+}
+
+#fullBanner {
+    aspect-ratio: 16/9;
+    width: 90%;
+    height: 80vh;
+    margin: 0 auto;
+    padding: 50px;
+    object-fit: cover;
+    display: block;
+    filter: brightness(50%);
+}
+
+.topSection {
+    height: 100vh;
+}
+
+.textOverImage {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.textOverImageCenter{
+    font-size: 5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#groupText {
+    font-size: 1.5rem;
+    max-width: 60ch;
+    margin: 30px auto
+}
+
+#groupText > p:last-child {
+    font-size: 1rem;
+    margin: 30px 0;
+}
