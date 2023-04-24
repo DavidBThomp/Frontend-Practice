@@ -265,22 +265,39 @@ video {
 
 .cta {
     display: flex;
-    position: relative;
-    height: 95vh;
     justify-content: center;
 }
 
 .flexChild {
-    max-height: 700px;
-background-color: #b1c5ff;
+    width: 600px;
+    background-color: #b1c5ff;
 }
 
-.flexChild >img {
+.flexChild > img {
     object-fit: cover;
-    height: 100%;
     aspect-ratio: 1/1;
 }
 
-.textArea {
-    max-width: 60ch;
+.flexChild > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+    height: 100%;
+}
+
+.flexChild > div > a {
+    color: blue;
+}
+
+.flexChild > div > a::after {
+    padding: 0 0 0 5px;
+    content: ">";
+}
+
+.flexChild > div > h2,
+.flexChild > div > a {
+padding: 20px 0;
+font-weight: 500;
+letter-spacing: 1px;
 }
