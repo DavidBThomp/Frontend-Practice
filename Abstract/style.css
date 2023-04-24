@@ -1,0 +1,30 @@
+/* 
+
+Color Pallet: 
+#dadbf1
+#4C5FD5
+#fff
+#000000
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+font-family: 'Roboto', sans-serif;
+
+To use variable declared in :root
+var(--primary)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --primary: #4C5FD5;
+    --seconday: #dadbf1;
+}
+
+html {
+
+}
