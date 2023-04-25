@@ -18,13 +18,130 @@ var(--primary)
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
     --primary: #4C5FD5;
     --seconday: #dadbf1;
+    --lightGrey: #191a1b;
 }
 
-html {
+/* 
+    Utility Classes
+*/
 
+.flex {
+    display: flex;
 }
+
+.align-center {
+    align-items: center;
+}
+
+/* 
+    IDs 
+*/
+
+#logo {
+    margin: 2px;
+    width: 40px;
+    height: 40px;
+    filter: invert(38%) sepia(94%) saturate(589%) hue-rotate(198deg) brightness(86%) contrast(95%);
+}
+
+#navProps {
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+/* 
+    Header/Nav
+*/
+
+nav {
+    background-color: black;
+    color: white;
+    padding: 20px 10px;
+    font-size: 1.3rem;
+}
+
+.rightIcons {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(139deg) brightness(103%) contrast(101%);
+}
+
+.navBarLinks {
+    display: none;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+}
+
+.navBarLinks ul {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+    padding: 30px;
+    width: 100%;
+    flex-direction: row;
+    text-align: center;
+}
+
+.navBarLinks li {
+}
+
+.navBarLinks li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 1rem 0.5rem;
+    font-size: 1.5rem;
+}
+
+.navBarLinks li:hover {
+    background-color: #555;
+}
+
+.borderWhiteBtm {
+    border-bottom: white 1px solid;
+}
+
+.active {
+    display: flex;
+}
+
+/* 
+    Main Section
+*/
+
+/* Search Section */
+.searchSection {
+    background-color: var(--seconday);
+    padding: 25% 10px 30% 10px;
+    text-align: center;
+}
+
+.searchSection h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 0 0 50px;
+}
+
+.searchSection input {
+    width: 100%;
+    height: 55px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+/* 
+    Media Queries 
+*/
+
+@media (min-width:475px) {}

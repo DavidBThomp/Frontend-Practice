@@ -13,6 +13,7 @@
 
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,9 +22,44 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Test</h1>
+    <header>
+        <nav>
+            <div class="flex" id="navProps">
+                <div class="flex align-center" id="leftNav">
+                    <img src="./assets/bxs-server.svg" alt="" id="logo">
+                    <p>Server King | Help Center</p>
+                </div>
+
+                <div class="flex align-center" id="rightNav">
+                    <img src="./assets/search.svg" alt="" class="rightIcons">
+                    <a href="javascript:void(0);" class="icon" onclick="navToggle()">
+                        <img src="./assets/hamIcon.svg" alt="" class="rightIcons">
+                    </a>
+                </div>
+            </div>
+            <div class="navBarLinks">
+                <ul>
+                    <li><a href="#" class="borderWhiteBtm">Submit Request</a></li>
+                    <li><a href="#">Sign In</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="searchSection">
+            <h1>How can we help?</h1>
+            <form action="" method="post">
+                <label for="serachHelp"></label>
+                <input type="search" name="serachHelp" id="serachHelp" placeholder="Search">
+            </form>
+        </section>
+    </main>
+
 
     <script src="app.js"></script>
 </body>
+
 </html>
