@@ -45,6 +45,9 @@ var(--primary)
 */
 
 #logo {
+    background-color: white;
+    padding: 4px;
+    border-radius: 10px;
     margin: 2px;
     width: 40px;
     height: 40px;
@@ -91,8 +94,7 @@ nav {
     text-align: center;
 }
 
-.navBarLinks li {
-}
+.navBarLinks li {}
 
 .navBarLinks li a {
     text-decoration: none;
@@ -121,7 +123,7 @@ nav {
 /* Search Section */
 .searchSection {
     background-color: var(--seconday);
-    padding: 25% 10px 30% 10px;
+    padding: 100px 10px 150px 10px;
     text-align: center;
 }
 
@@ -140,7 +142,105 @@ nav {
     font-size: 1.5rem;
 }
 
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+}
+
+.posRel {
+    position: relative;
+}
+
+#searchArrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    margin: auto 0;
+}
+
+#searchHelp:focus-visible {
+    border: 2px solid var(--primary);
+    outline: none;
+
+}
+
+.posRel img {
+    width: 30px;
+    height: 40px;
+}
+
+.posRel img {}
+
+
 /* 
+    Items in main
+*/
+
+.itemsContainer {
+    padding: 0 10px;
+    margin: 100px 0 0 0;
+    flex-direction: column;
+}
+
+.itemsContainer > .flex {
+    margin: 0 0 100px 0;
+}
+
+.itemsContainer > .flex > div h2 {
+    font-size: 1.75rem;
+    margin: 0 0 20px 0;
+}
+
+.itemsContainer > .flex > div p {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin: 0 0 15px 0;
+}
+
+.itemsContainer > .flex > div a {
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.itemsContainer > .flex > div a::after {
+    padding: 0 0 0 5px;
+    content: "\2192";
+}
+
+.svgItemImg {
+    width: 50px;
+    height: 50px;
+    margin: 0 15px 0 0;
+}
+
+
+
+
+
+/* 
+    Sticky Accessibility
+*/
+
+.stickyAcc {
+    position: fixed;
+
+    background-color: var(--primary);
+    border-radius: 50%;
+
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+/*  
     Media Queries 
 */
 
