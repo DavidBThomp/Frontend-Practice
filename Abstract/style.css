@@ -151,6 +151,9 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .posRel {
     position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 700px;
 }
 
 #searchArrow {
@@ -185,29 +188,29 @@ input[type="search"]::-webkit-search-results-decoration {
     flex-direction: column;
 }
 
-.itemsContainer > .flex {
+.itemsContainer>.flex {
     margin: 0 0 100px 0;
 }
 
-.itemsContainer > .flex > div h2 {
+.itemsContainer>.flex>div h2 {
     font-size: 1.75rem;
     margin: 0 0 20px 0;
 }
 
-.itemsContainer > .flex > div p {
+.itemsContainer>.flex>div p {
     font-size: 1.5rem;
     letter-spacing: 1px;
     margin: 0 0 15px 0;
 }
 
-.itemsContainer > .flex > div a {
+.itemsContainer>.flex>div a {
     font-size: 1.25rem;
     letter-spacing: 1px;
     text-decoration: none;
     color: var(--primary);
 }
 
-.itemsContainer > .flex > div a::after {
+.itemsContainer>.flex>div a::after {
     padding: 0 0 0 5px;
     content: "\2192";
 }
@@ -240,8 +243,93 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 
+/* 
+    Footer
+*/
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footerSec {
+    flex: 50%;
+    margin: 0 0 30px 0;
+}
+
+.footerSec a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font: 1rem;
+    margin: 0 0 2px 0;
+}
+
+.footerSec h3 {
+    font-size: 1.25rem;
+    margin: 0 0 10px 0;
+}
+
+.footerSec h4 {
+    margin: 30px 0 0 0;
+}
+
+footer p {
+    font-size: 1.25rem;
+    margin: 0 0 2px 0;
+}
+
+footer .flex {
+    flex-wrap: wrap;
+}
+
+#copyRight {
+    flex-grow: 1;
+}
+
+
 /*  
     Media Queries 
 */
 
-@media (min-width:475px) {}
+/* Tablet */
+@media (min-width:768px) {
+    nav {
+        padding: 20px 30px;
+    }
+
+    .searchSection h1 {
+        font-size: 3.5rem;
+        font-weight: 400;
+        margin: 0 0 50px;
+    }
+
+    .searchSection input {
+        max-width: 700px;
+    }
+
+    #searchArrow {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+    }
+
+    #logo {
+        margin: 0 10px;
+    }
+
+    .itemsContainer {
+        max-width: 600px;
+        margin: 100px auto 0;
+    }
+
+    footer .flex {
+        width: 50%
+    }
+
+    #copyRight {
+        display: inline-block
+    }
+}

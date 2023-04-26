@@ -9,6 +9,8 @@
     Site needs to be respsonsive and Mobile First Built
         This inlcudes Hamburger Menu
     Make sure Enter Button works to search
+
+    Arrow Button on Search doesn't change color
  -->
 
 
@@ -36,7 +38,9 @@
         <nav>
             <div class="flex" id="navProps">
                 <div class="flex align-center" id="leftNav">
-                    <img src="./assets/bxs-server.svg" alt="" id="logo">
+                    <a href="#">
+                        <img src="./assets/bxs-server.svg" alt="" id="logo">
+                    </a>
                     <p>Server King | Help Center</p>
                 </div>
 
@@ -60,9 +64,11 @@
         <section class="searchSection">
             <h1>How can we help?</h1>
             <form action="" method="post" class="posRel">
-                <label for="serachHelp"></label>
-                <input type="search" name="serachHelp" id="searchHelp" placeholder="Search">
-                <img src="./assets/right-arrow.svg" alt="" id="searchArrow">
+                <div>
+                    <label for="serachHelp"></label>
+                    <input type="search" name="serachHelp" id="searchHelp" placeholder="Search">
+                    <img src="./assets/right-arrow.svg" alt="" id="searchArrow">
+                </div>
             </form>
         </section>
 
@@ -79,46 +85,47 @@
                 </div>
 
                 <div class="flex">
-                    <img src="./assets/shield-plus.svg" alt="" class="svgItemImg">
+                    <img src="./assets/copy-alt.svg" alt="" class="svgItemImg">
                     <div>
-                        <h2>Using Abstract</h2>
-                        <p>Abstract lets you manage, version, and document your designs in one place.</p>
+                        <h2>File Copying</h2>
+                        <p>Server King lets you manage, version, and document your designs in one place.</p>
                         <a href="#">Learn More</a>
                     </div>
                 </div>
 
                 <div class="flex">
-                    <img src="./assets/shield-plus.svg" alt="" class="svgItemImg">
+                    <img src="./assets/heroku.svg" alt="" class="svgItemImg">
                     <div>
-                        <h2>Using Abstract</h2>
-                        <p>Abstract lets you manage, version, and document your designs in one place.</p>
+                        <h2>Offline Hosting</h2>
+                        <p>Using Heroku we are able to host local servers that aren't reliant on constant connection.
+                        </p>
                         <a href="#">Learn More</a>
                     </div>
                 </div>
 
                 <div class="flex">
-                    <img src="./assets/shield-plus.svg" alt="" class="svgItemImg">
+                    <img src="./assets/mongodb.svg" alt="" class="svgItemImg">
                     <div>
-                        <h2>Using Abstract</h2>
-                        <p>Abstract lets you manage, version, and document your designs in one place.</p>
+                        <h2>Rapid Speeds</h2>
+                        <p>Using MongoDB in the backend enables rapid read and writes to the servers.</p>
                         <a href="#">Learn More</a>
                     </div>
                 </div>
 
                 <div class="flex">
-                    <img src="./assets/shield-plus.svg" alt="" class="svgItemImg">
+                    <img src="./assets/netlify.svg" alt="" class="svgItemImg">
                     <div>
-                        <h2>Using Abstract</h2>
-                        <p>Abstract lets you manage, version, and document your designs in one place.</p>
+                        <h2>Netlify</h2>
+                        <p>Our partner program gives you a membership to host on netlify as well!</p>
                         <a href="#">Learn More</a>
                     </div>
                 </div>
 
                 <div class="flex">
-                    <img src="./assets/shield-plus.svg" alt="" class="svgItemImg">
+                    <img src="./assets/postgresql.svg" alt="" class="svgItemImg">
                     <div>
-                        <h2>Using Abstract</h2>
-                        <p>Abstract lets you manage, version, and document your designs in one place.</p>
+                        <h2>SQL Formatting</h2>
+                        <p>If SQL is your speciality we also have a format to make queries that way.</p>
                         <a href="#">Learn More</a>
                     </div>
                 </div>
@@ -128,6 +135,53 @@
 
 
     <footer>
+        <div class="flex">
+            <div class="footerSec">
+                <h3>
+                    Server King
+                </h3>
+                <a href="#">Start Trial</a>
+                <a href="#">Pricing</a>
+                <a href="#">Download</a>
+            </div>
+            <div class="footerSec">
+                <h3>
+                    Resources
+                </h3>
+                <a href="#">Blog</a>
+                <a href="#">Help Center</a>
+                <a href="#">Release Notes</a>
+                <a href="#">Status</a>
+            </div>
+            <div class="footerSec">
+                <h3>
+                    Community
+                </h3>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Facebook</a>
+                <a href="#">Dribble</a>
+                <a href="#">Podcast</a>
+            </div>
+            <div class="footerSec">
+                <h3>
+                    Company
+                </h3>
+                <a href="#">About Us</a>
+                <a href="#">Career</a>
+                <a href="#">Legal</a>
+                <h4> Contact Us</h4>
+                <a href="mailto:test@gmail.copm">Info@serverking.com</a>
+            </div>
+
+            <div id="copyRight">
+                <img src="./assets/bxs-server.svg" alt="" id="logo">
+                <p>&#169 CopyRight 2023</p>
+                <p>Server King Managment C.O</p>
+                <p>All Rights Reserved</p>
+            </div>
+        </div>
+
 
     </footer>
 
