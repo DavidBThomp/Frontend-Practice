@@ -267,7 +267,7 @@ footer {
 }
 
 .footerSec h3 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin: 0 0 10px 0;
 }
 
@@ -286,6 +286,14 @@ footer .flex {
 
 #copyRight {
     flex-grow: 1;
+}
+
+.footerSec:nth-child(3) {
+    display: none;
+}
+
+.navButtons {
+    display: none;
 }
 
 
@@ -325,11 +333,134 @@ footer .flex {
         margin: 100px auto 0;
     }
 
-    footer .flex {
-        width: 50%
+    .footerSec {
+        flex: 33.3%;
+        margin: 0 0 30px 0;
+        flex-grow: 0;
     }
 
     #copyRight {
-        display: inline-block
+        /* align-self: flex-end; */
+        flex-grow: 0;
+        width: 33.3%
+    }
+
+    #copyRight #logo {
+        margin: 60px 0 0 0;
+    }
+
+    footer {
+        padding: 60px 40px;
+    }
+}
+
+@media (min-width:1024px) {
+    nav {
+        font-size: 1.5rem;
+    }
+
+    .searchSection h1 {
+        font-size: 4rem;
+        font-weight: 500;
+        margin: 0 0 25px;
+    }
+
+    .itemsContainer .flex {
+        flex: 1 1 50%;
+        padding: 0 10px;
+        margin: 75px auto 0;
+    }
+
+    .itemsContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 900px;
+    }
+
+    footer {
+        margin: 200px 0 0 0;
+    }
+
+    .footerSec {
+        flex: 1;
+    }
+
+    .footerSec:nth-child(3) {
+        display: none;
+    }
+
+    #copyRight #logo {
+        margin: 150px 0 0 10px;
+    }
+
+    /* Remove Hamburger */
+    #rightNav {
+        display: none;
+    }
+
+    .navButtons {
+        display: inline-block;
+    }
+
+    .navButtons ul,
+    .navButtons button,
+    .navButtons li {
+        display: inline-block;
+        text-decoration: none;
+        background-color: black;
+        color: white;
+        list-style-type: none;
+        border: none;
+    }
+
+    .navButtons button {
+        background-color: #111;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        padding: 10px 20px;
+        border: white 1px solid
+    }
+
+    .navButtons #signIn {
+        background-color: var(--primary);
+        border: none;
+        margin: 0 0 0 10px;
+    }
+
+    .navBarLinks {
+        display: none;
+    }
+}
+
+@media (min-width: 1440px) {
+    .itemsContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 1600px;
+    }
+
+    #copyRight  {
+        text-align: right;
+    }
+
+    #copyRight #align-left {
+        text-align: left;
+        display: inline-block;
+    }
+
+    #navProps {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    nav {
+        padding: 20px 100px;
+    }
+}
+
+@media (min-width: 1600px) {
+    footer .flex{
+        max-width: 1600px;;
+        margin: 0 auto;
     }
 }

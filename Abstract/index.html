@@ -6,10 +6,7 @@
     https://www.frontendpractice.com/projects/abstract
 
     For me:
-    Site needs to be respsonsive and Mobile First Built
-        This inlcudes Hamburger Menu
-    Make sure Enter Button works to search
-
+    Make sure Enter Button works to search X
     Arrow Button on Search doesn't change color
  -->
 
@@ -50,6 +47,13 @@
                         <img src="./assets/hamIcon.svg" alt="" class="rightIcons">
                     </a>
                 </div>
+
+                <div class="navButtons">
+                    <ul>
+                        <li><a href="#" class=""><button>Submit Request</button></a></li>
+                        <li><a href="#"><button id="signIn">Sign In</button></a></li>
+                    </ul>
+                </div>
             </div>
             <div class="navBarLinks">
                 <ul>
@@ -63,7 +67,7 @@
     <main>
         <section class="searchSection">
             <h1>How can we help?</h1>
-            <form action="" method="post" class="posRel">
+            <form action="" method="post" class="posRel" onsubmit="return false">
                 <div>
                     <label for="serachHelp"></label>
                     <input type="search" name="serachHelp" id="searchHelp" placeholder="Search">
@@ -153,6 +157,7 @@
                 <a href="#">Release Notes</a>
                 <a href="#">Status</a>
             </div>
+            <div class="footerSec"></div>
             <div class="footerSec">
                 <h3>
                     Community
@@ -175,10 +180,12 @@
             </div>
 
             <div id="copyRight">
-                <img src="./assets/bxs-server.svg" alt="" id="logo">
-                <p>&#169 CopyRight 2023</p>
-                <p>Server King Managment C.O</p>
-                <p>All Rights Reserved</p>
+                <div id="align-left">
+                    <img src="./assets/bxs-server.svg" alt="" id="logo">
+                    <p>&#169 CopyRight 2023</p>
+                    <p>Server King Managment C.O</p>
+                    <p>All Rights Reserved</p>
+                </div>
             </div>
         </div>
 
