@@ -36,6 +36,13 @@ var(--primary)
 }
 
 /* Section for each book */
+
+/* Background color of body is changed and transistioned */
+body {
+    transition: .5s background-color;
+}
+
+
 section {
     height: 100vh;
     width: 100vw;
@@ -54,10 +61,10 @@ section img {
     width: 100%;
     height: auto;
 
-    max-width: 50%;
+    max-width: 60%;
     max-height: 70%;
 
-    box-shadow: 20px -15px 93px -26px #000000;
+    box-shadow: 5px 0px 10px -5px #000000;
 }
 
 section p {
@@ -69,7 +76,7 @@ section p {
 /* 
     Book Section IDs
 */
-
+/* 
 #firBook {
     background-color: var(--first);
 
@@ -93,16 +100,14 @@ section p {
 
 #sixBook {
     background-color: var(--sixth);
-}
+} */
 
 /* 
     Text Styling
 */
 
 .title {
-    position: absolute;
-    top: 20px;
-    left: 10px;
+    padding: 20px 0 0 10px;
     font-size: 1.3rem;
     font-weight: 500;
     color: white;
@@ -121,4 +126,58 @@ section a {
 
 .white {
     color: white;
+}
+
+
+
+/* Footer */
+
+.footerSec {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerSec div {
+    margin: 0 auto 30px;
+    max-width: 70%;
+}
+
+footer p {
+    text-align: center;
+    font-weight: 500;
+    padding: 0px;
+}
+
+footer a {
+    color: white;
+    padding: 0 0 20px;
+}
+
+/* 
+    Media Queries
+*/
+
+@media (min-width: 768px) {
+    .footerSec {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footerSec div,
+    .footerSec > p {
+        margin: 0;
+        max-width: auto;
+        flex: 0 0 30%;
+
+        padding: 20px;
+        ;
+    }
+
+    .footerSec > p {
+        align-self: flex-end;
+    }
+
+    footer p {
+        text-align: start;
+    }
 }

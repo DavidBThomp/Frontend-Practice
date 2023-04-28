@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- 
+    Last gap needs to be less than 10px
+    Color and book selection
+ -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,38 +19,57 @@
 <body>
     <main>
         <h1 class="title">Brendan's Books</h1>
-        <section id="firBook">
+        <section id="firBook" data-color="#4C5FD5">
+            <img src="./images/dogWalk.jpg" alt="">
+            <p class="white">Woman Walks Dogs</p>
+            <p class="white"><a href="#">BUY HERE</a></p>
+            <p class="white">Reviewed at <a href="#">7/10 Stars</a></p>
+        </section>
+        <section id="secBook" data-color="#dadbf1">
             <img src="./images/dogWalk.jpg" alt="">
             <p class="white">Woman Walks Dogs</p>
             <p class="white"><a href="#">BUY HERE</a></p>
             <p class="white">Reviewed at 7/10 Stars</p>
         </section>
-        <section id="secBook"> <img src="./images/dogWalk.jpg" alt="">
+        <section id="thiBook" data-color="#191a1b">
+            <img src="./images/dogWalk.jpg" alt="">
             <p class="white">Woman Walks Dogs</p>
             <p class="white"><a href="#">BUY HERE</a></p>
             <p class="white">Reviewed at 7/10 Stars</p>
         </section>
-        <section id="thiBook"> <img src="./images/dogWalk.jpg" alt="">
+        <section id="forBook" data-color="#020232">
+            <img src="./images/dogWalk.jpg" alt="">
             <p class="white">Woman Walks Dogs</p>
             <p class="white"><a href="#">BUY HERE</a></p>
             <p class="white">Reviewed at 7/10 Stars</p>
         </section>
-        <section id="forBook"> <img src="./images/dogWalk.jpg" alt="">
+        <section id="fifBook" data-color="#6A1B2C">
+            <img src="./images/dogWalk.jpg" alt="">
             <p class="white">Woman Walks Dogs</p>
             <p class="white"><a href="#">BUY HERE</a></p>
             <p class="white">Reviewed at 7/10 Stars</p>
         </section>
-        <section id="fifBook"> <img src="./images/dogWalk.jpg" alt="">
-            <p class="white">Woman Walks Dogs</p>
-            <p class="white"><a href="#">BUY HERE</a></p>
-            <p class="white">Reviewed at 7/10 Stars</p>
-        </section>
-        <section id="sixBook"> <img src="./images/dogWalk.jpg" alt="">
+        <section id="sixBook" data-color="#00FABC">
+            <img src="./images/dogWalk.jpg" alt="">
             <p class="white">Woman Walks Dogs</p>
             <p class="white"><a href="#">BUY HERE</a></p>
             <p class="white">Reviewed at 7/10 Stars</p>
         </section>
     </main>
+
+    <footer class="white">
+        <div class="footerSec">
+            <div>
+                <p>These books are some of my favorites that I've been able to read. I haven't read much recently out of
+                    college
+                    and don't know if I will be reading as consistently again.
+                </p>
+                <p>&copy; DevBThom 2023</p>
+            </div>
+
+            <p><a href="mailto:dev@devbthom.com">dev@devbthom.com</a></p>
+        </div>
+    </footer>
 
 
     <script src="app.js"></script>
