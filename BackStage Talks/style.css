@@ -21,8 +21,7 @@ var(--primary)
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+    outline: 3px solid #f00 !important;
 }
 
 /* Background Color For Book */
@@ -40,12 +39,14 @@ var(--primary)
 /* Background color of body is changed and transistioned */
 body {
     transition: .5s background-color;
+    margin: 0;
+    padding: 0;
 }
 
 
 section {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 
     /* Makes centering content very easy */
     display: flex;
@@ -138,7 +139,7 @@ section a {
 }
 
 .footerSec div {
-    margin: 0 auto 30px;
+    margin: 0 1 30px;
     max-width: 70%;
 }
 
@@ -157,6 +158,10 @@ footer a {
     Media Queries
 */
 
+.contact {
+    display: none;
+}
+
 @media (min-width: 768px) {
     .footerSec {
         flex-direction: row;
@@ -164,7 +169,7 @@ footer a {
     }
 
     .footerSec div,
-    .footerSec > p {
+    .footerSec>p {
         margin: 0;
         max-width: auto;
         flex: 0 0 30%;
@@ -173,11 +178,50 @@ footer a {
         ;
     }
 
-    .footerSec > p {
+    .footerSec>p {
         align-self: flex-end;
     }
 
     footer p {
         text-align: start;
     }
+
+    section img {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .title {
+        font-size: 2.25rem;
+    }
+
+    section p {
+        font-size: 1.5rem;
+    }
+
+    main {
+        position: relative;
+    }
+
+    .contact {
+        display: inline-block;
+        position: fixed;
+        top: 15px;  
+        right: 15px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .title {
+        display: inline-block;
+        position: fixed;
+        top: 15px;  
+        left: 15px;
+        margin: 0;
+        padding: 0;
+    }
+
+    
+
 }
