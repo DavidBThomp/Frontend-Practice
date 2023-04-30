@@ -264,36 +264,14 @@ footer a {
     section {
         padding: 100px;
         margin: 20px 0;
-        scroll-snap-align: start;
-
+        transform: translate3d(0px, 0px, 0px);
+        transition: all 700ms ease 0s;
+        touch-action: none;
     }
 
     html {
-        overflow-y: scroll;
-        scroll-snap-type: y mandatory;
         scroll-behavior: smooth;
-
-        animation: 
-      slide 3s ease infinite,
-      snap-toggle 3s ease infinite
     }
 
-    @keyframes slide {
-        75%, 99% {
-          top: 0
-        }
-        95%, 98% {
-          top: 100%
-        }
-      }
-      
-      @keyframes slide-restart {
-        75%, 99% {
-          top: 0
-        }
-        95%, 98% {
-          top: -400%
-        }
-      }
-      
+
 }
