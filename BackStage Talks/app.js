@@ -31,6 +31,9 @@ changes.forEach(change => {
     observer.observe(change);
 });
 
+
+
+
 // Scroll Direction
 
 // Initial state
@@ -77,3 +80,13 @@ window.addEventListener('scroll', () => {
         }, 500); // unblocks Scroll event after unit MS
     }
 });
+
+
+    // This will be used for preventing scrolling on mobile sized viewports
+    // if (document.body.clientWidth >= 1024) {
+    //     console.log('Run this')
+    // }
+
+    // Need to make it so scroll direction is decided by Delta
+    // Scroll on mousewheel, works with arrow keys
+    
