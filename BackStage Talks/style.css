@@ -42,6 +42,11 @@ body {
     padding: 0;
 }
 
+.active {
+    height: 100vh;
+    overflow: hidden;
+}
+
 
 section {
     height: 100vh;
@@ -264,9 +269,6 @@ footer a {
     section {
         padding: 100px;
         margin: 20px 0;
-        transform: translate3d(0px, 0px, 0px);
-        transition: all 700ms ease 0s;
-        touch-action: none;
     }
 
     html {
