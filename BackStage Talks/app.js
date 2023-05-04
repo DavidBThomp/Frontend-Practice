@@ -51,9 +51,9 @@ function detectDirection(e) {
 
     // Scroll to the next or previous section, depending on the scroll direction
     if (delta > 0 && nextSection) {
-            nextSection.scrollIntoView({
-                behavior: 'smooth'
-            })
+        nextSection.scrollIntoView({
+            behavior: 'smooth'
+        })
     } else if (delta < 0 && prevSection) {
         prevSection.scrollIntoView({
             behavior: 'smooth'
@@ -65,8 +65,10 @@ function detectDirection(e) {
 
 // Listen for mouse wheel events
 window.addEventListener('wheel', e => {
-    e.preventDefault();
-    detectDirection(e);
+    if (window.innerWidth >= 1024) {
+        e.preventDefault();
+        detectDirection(e);
+    }
 }, {
     passive: false
 });
