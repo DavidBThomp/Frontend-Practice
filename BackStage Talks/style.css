@@ -78,6 +78,10 @@ section p {
     font-weight: 500;
 }
 
+#devbthom {
+    color: white;
+}
+
 
 /* 
     Book Section IDs
@@ -159,6 +163,30 @@ footer a {
     color: white;
     padding: 0 0 20px;
 }
+
+/* Injection Button DevBThom */
+
+#devbthom {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color: #463F3A;
+    color: #F4F3EE;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: none;
+    border: none;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+}
+
+#devbthom:hover {
+    background-color: #94877e;
+    color: white;
+    cursor: pointer;
+}
+
+/* End Button Injection */
 
 /* 
     Media Queries

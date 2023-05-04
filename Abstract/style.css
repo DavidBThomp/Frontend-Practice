@@ -130,6 +130,11 @@ nav {
 .searchSection h1 {
     font-size: 2.5rem;
     font-weight: 400;
+}
+
+.searchSection h2 {
+    font-size: 1rem;
+    font-weight: 500;
     margin: 0 0 50px;
 }
 
@@ -266,6 +271,10 @@ footer {
     margin: 0 0 2px 0;
 }
 
+.footerSec a:hover {
+    text-decoration: underline;
+}
+
 .footerSec h3 {
     font-size: 1.5rem;
     margin: 0 0 10px 0;
@@ -296,6 +305,50 @@ footer .flex {
     display: none;
 }
 
+#shield {
+    filter: invert(30%) sepia(94%) saturate(1069%) hue-rotate(212deg) brightness(93%) contrast(88%);
+}
+
+#netlify {
+    filter: invert(64%) sepia(26%) saturate(7349%) hue-rotate(139deg) brightness(96%) contrast(96%);
+}
+
+
+#heroku {
+    filter: invert(12%) sepia(75%) saturate(4825%) hue-rotate(266deg) brightness(88%) contrast(98%);
+}
+
+#mongoDb {
+    filter: invert(64%) sepia(54%) saturate(1416%) hue-rotate(93deg) brightness(98%) contrast(107%);
+}
+
+#postgre {
+    filter: invert(37%) sepia(8%) saturate(3415%) hue-rotate(165deg) brightness(94%) contrast(89%);
+}
+
+/* Injection Button DevBThom */
+
+#devbthom {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color: #463F3A;
+    color: #F4F3EE;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: none;
+    border: none;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+}
+
+#devbthom:hover {
+    background-color: #94877e;
+    color: white;
+    cursor: pointer;
+}
+
+/* End Button Injection */
 
 /*  
     Media Queries 
@@ -418,13 +471,24 @@ footer .flex {
         border-radius: 10px;
         font-size: 1.5rem;
         padding: 10px 20px;
-        border: white 1px solid
+        border: white 1px solid;
+        transition: 0.3s;
     }
 
     .navButtons #signIn {
         background-color: var(--primary);
         border: none;
         margin: 0 0 0 10px;
+        transition: 0.3s;
+    }
+
+    .navButtons button:first-child:hover {
+        background-color: var(--seconday);
+        color: black;
+    }
+
+    .navButtons #signIn:hover {
+        background-color: var(--seconday);
     }
 
     .navBarLinks {
@@ -439,7 +503,7 @@ footer .flex {
         max-width: 1600px;
     }
 
-    #copyRight  {
+    #copyRight {
         text-align: right;
     }
 
@@ -459,8 +523,9 @@ footer .flex {
 }
 
 @media (min-width: 1600px) {
-    footer .flex{
-        max-width: 1600px;;
+    footer .flex {
+        max-width: 1600px;
+        ;
         margin: 0 auto;
     }
 }

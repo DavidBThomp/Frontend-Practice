@@ -61,14 +61,32 @@ function detectDirection(e) {
     }
 }
 
-
-
 // Listen for mouse wheel events
 window.addEventListener('wheel', e => {
     if (window.innerWidth >= 1024) {
+        // Removes Scroll bar - Might be a bit iffy
+        document.body.style.overflow = 'hidden';
         e.preventDefault();
         detectDirection(e);
     }
 }, {
     passive: false
 });
+
+// Injects Link back to DevBThom
+
+const pageElement = 'main'
+const button = document.createElement('button');
+button.textContent = 'Back to Portfolio';
+button.id = 'devbthom'
+button.style.position = 'fixed';
+button.style.bottom = '200px';
+button.style.right = '20px';
+button.addEventListener('click', () => {
+    window.location.href = 'https://devbthom.com/';
+});
+
+const container = document.querySelector(pageElement);
+container.appendChild(button);
+
+// End Link Injects
