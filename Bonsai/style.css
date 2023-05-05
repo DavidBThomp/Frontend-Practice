@@ -1,0 +1,68 @@
+:root {
+    --primGreen: #00b289;
+    --secGreen: #003c2f;
+    --primGrey: #4c4d5f;
+    --primYellow: #f8db62;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Utility Classes */
+.flex {
+    display: flex;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+
+
+/* Nav Mobile */
+nav > div {
+    padding: 15px;
+}
+
+.bar {
+    width: 20px;
+    height: 1px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+.hamburger {
+    background-color: var(--secGreen);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+
+/* Assets */
+.logo {
+    width: 25px;
+    height: 25px;
+}
