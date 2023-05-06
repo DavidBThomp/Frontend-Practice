@@ -18,22 +18,73 @@
 <body>
     <nav>
         <div class="flex justify-space-between align-items-center">
-            <div class="company flex align-items-center">
-                <img src="./assets/network-chart.svg" alt="Company Logo" class="logo">
-                <h1 class="inline-block m-0">company</h1>
-            </div>
-            <div class="flex inline-block">
-                <div class="hamburger">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
+            <a href="#">
+                <div class="company flex align-items-center">
+                    <img src="./assets/network-chart.svg" alt="Company Logo" class="logo">
+                    <h1 class="inline-block m-0">company</h1>
                 </div>
-
-                <!-- Make Hamburger Clickable with links inside -->
+            </a>
+            <div class="flex inline-block">
+                <a href="javascript:void(0);" onclick="navToggle()">
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </a>
 
 
             </div>
+
+            <!-- Make Hamburger Clickable with links inside -->
+
         </div>
+
+        <div class="navBarLinks flex-direction-column">
+            <ul class="m-0 p-0">
+
+                <li>
+                    <div class="flex justify-space-between navPrim align-items-center">
+                        <div>Product</div>
+                        <div>&#8681;</div>
+                    </div>
+                    <div class="dropDownProducts inline-block">
+                        <ul class="p-0 block">
+                            <li><a href="#" class="">Item 1</a></li>
+                            <li><a href="#" class="">Item 2</a></li>
+                            <li><a href="#" class="">Item 3</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="flex justify-space-between navPrim align-items-center">
+                        <div>Templates</div>
+                        <div>&#8681;</div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="flex justify-space-between navPrim align-items-center">Pricing</div>
+                </li>
+
+                <li>
+                    <div class="flex justify-space-between navPrim align-items-center">
+                        <div>Resources</div>
+                        <div>&#8681;</div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="flex justify-space-between navPrim align-items-center">Reviews</div>
+                </li>
+
+            </ul>
+
+            <ul class="m-0 p-0">
+                <li><a href="#"><button class="button login" id="">Login</button></a></li>
+                <li><a href="#"><button class="button startFree">Start Free</button></a></li>
+            </ul>
     </nav>
 
 
