@@ -83,17 +83,26 @@ nav>div {
     overflow: hidden;
     z-index: -1;
 
-    transition: top 500ms ease-in-out;
+    transition: top 300ms ease-in-out;
 }
 
 .navPrim {
-    height: 20px;
-    padding: 20px 0;
+    height: 25px;
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    margin: 20px 0;
 }
 
 .dropDownProducts {
-
+    z-index: 1;
+    display: none;
 }
+
+.mainMenu > li:hover .dropDownProducts {
+    display: inline-block;
+}
+
 
 .active {
     display: flex;
