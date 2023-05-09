@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- 
+        Investigate making a switch toggle button
+     -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,6 +28,7 @@
                     <h1 class="inline-block m-0">company</h1>
                 </div>
             </a>
+
             <div class="flex inline-block">
                 <a href="javascript:void(0);" onclick="navToggle()">
                     <div class="hamburger">
@@ -32,12 +37,7 @@
                         <div class="bar"></div>
                     </div>
                 </a>
-
-
             </div>
-
-            <!-- Make Hamburger Clickable with links inside -->
-
         </div>
 
         <div class="navBarLinks flex-direction-column">
@@ -72,7 +72,8 @@
                 </li>
 
                 <li>
-                    <button class="flex justify-space-between navPrim align-items-center p-0 m-0 topBar">Pricing</button>
+                    <button
+                        class="flex justify-space-between navPrim align-items-center p-0 m-0 topBar">Pricing</button>
                 </li>
 
                 <li>
@@ -90,7 +91,8 @@
                 </li>
 
                 <li>
-                    <button class="flex justify-space-between navPrim align-items-center p-0 m-0 topBar">Reviews</button>
+                    <button
+                        class="flex justify-space-between navPrim align-items-center p-0 m-0 topBar">Reviews</button>
                 </li>
 
             </ul>
@@ -101,7 +103,60 @@
             </ul>
     </nav>
 
+    <main>
+        <div class="container-padding">
+            <h1 class="text-align-center">Pick the best for your business</h1>
 
+            <!-- Rounded switch -->
+            <div class="switch-holder">
+                <div class="switch-toggle">
+                    <input type="checkbox" id="bluetooth">
+                    <label for="bluetooth"></label>
+                </div>
+            </div>
+
+            <!-- card -->
+            <div class="price-card flex">
+                <h2 class="text-align-center">Starter</h2>
+                <p class="text-align-center">$17 a month</p>
+                <button class="button">Start for Free</button>
+                <p class="text-align-center">Ideal for people who have pulses</p>
+                <div class="cardItem flex topBar align-items-center cardItemFirst">
+                    <img src="./assets/check-circle.svg" alt="">
+                    <div>Templates</div>
+                </div>
+                <div class="cardItem flex align-items-center">
+                    <img src="./assets/check-circle.svg" alt="">
+                    <div>Templates</div>
+                </div>
+                <div class="cardItem flex align-items-center">
+                    <img src="./assets/check-circle.svg" alt="">
+                    <div>Templates</div>
+                </div>
+                <div class="cardItem flex align-items-center">
+                    <img src="./assets/check-circle.svg" alt="">
+                    <div>Templates</div>
+                </div>
+                <div class="cardItem flex align-items-center">
+                    <img src="./assets/check-circle.svg" alt="">
+                    <div>Templates</div>
+                </div>
+                <div class="cardItem flex align-items-center">
+                    <img src="./assets/check-circle.svg" alt="">
+                    <div>Templates</div>
+                </div>
+                <div class="cardItem flex align-items-center">
+                    <img src="./assets/check-circle.svg" alt="">
+                    <div>Templates</div>
+                </div>
+                <button class="button">Start for Free</button>
+            </div>
+
+
+
+
+        </div>
+    </main>
 
 
 
