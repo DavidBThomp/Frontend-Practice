@@ -55,6 +55,14 @@ body {
     text-align: center;
 }
 
+.text-align-right {
+    text-align: right;
+}
+
+.mw-75 {
+    max-width: 75%;
+}
+
 
 /* Nav Mobile */
 nav>div {
@@ -223,10 +231,18 @@ nav button {
 }
 
 /* Pricing Card */
+.cardsContainer {
+    flex-direction: column;
+    margin: 50px 0;
+}
+
 .price-card {
+    margin: 10px 0;
     padding: 20px;
     flex-direction: column;
-    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    position: relative;
+    border-radius: 15px;
 }
 
 .cardItem {
@@ -239,7 +255,97 @@ nav button {
 }
 
 .cardItem>img {
+    width: 24px;
+    height: 24px;
+    aspect-ratio: 1/1;
     filter: invert(53%) sepia(37%) saturate(4481%) hue-rotate(72deg) brightness(93%) contrast(107%);
+}
+
+/* Cards Horizontal Scroll */
+.cardOutline {
+    border: 5px solid var(--primYellow);
+    border-top: 30px solid var(--primYellow);
+    border-radius: 15px;
+}
+
+.outlineText {
+    position: absolute;
+    top: -40px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.borderCard {
+    border: 1px solid #d3dcd4;
+    flex-direction: column;
+    padding: 25px;
+    min-height: 250px;
+    min-width: 235px;
+    gap: 20px;
+    margin: 0 0 20px 0;
+}
+
+.horizontalFlex {
+    flex-direction: row;
+    gap: 25px;
+    overflow: scroll;
+}
+
+/* FAQ Section */
+.dropDown {
+    cursor: pointer;
+}
+
+.touch {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+.faqText {
+    margin: 0;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.4s ease;
+}
+
+#touch1:checked~.faqText {
+    height: 110px;
+}
+
+#touch1:checked ~ label div > .arrow{
+    transform: rotate(180deg);
+}
+
+#touch2:checked~.faqText {
+    height: 110px;
+}
+
+#touch2:checked ~ label div > div{
+    transform: rotate(180deg);
+}
+
+#touch3:checked~.faqText {
+    height: 110px;
+}
+
+#touch3:checked ~ label div > div{
+    transform: rotate(180deg);
+}
+
+#touch4:checked~.faqText {
+    height: 110px;
+}
+
+#touch4:checked ~ label div > div{
+    transform: rotate(180deg);
+}
+
+.arrow {
+    transition: transform 0.2s ease;
 }
 
 /* Assets */
