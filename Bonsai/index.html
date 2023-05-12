@@ -2,8 +2,8 @@
 <html lang="en">
 
 <!-- 
-        Investigate making a switch toggle button
-     -->
+    Investigate making a switch toggle button with text on both sides
+-->
 
 <head>
     <meta charset="UTF-8">
@@ -359,7 +359,7 @@
 
             <!-- Reviews -->
             <section>
-                <h2>Trusted by many people!</h2>
+                <h2 class="text-align-center">Trusted by many people!</h2>
 
                 <div class="flex justify-content-center">
                     <img src="./assets/star.svg" alt="" width="50px" height="50px" class="border-right">
@@ -376,6 +376,22 @@
                             <p class="m-0">"I use the product very frequently"</p>
                         </div>
                         <div class="review flex">
+                            <p class="m-0">"Huge time saver"</p>
+                        </div>
+                        <div class="review flex">
+                            <p class="m-0">"I look forward to my workday now"</p>
+                        </div>
+                        <div class="review flex">
+                            <p class="m-0">"This is a nice review section"</p>
+                        </div>
+                        <div class="review flex">
+                            <p class="m-0">"Sometime I wonder how I lived without it"</p>
+                        </div>
+
+                    </div>
+
+                    <div class="reviewContainerRow">
+                        <div class="review flex">
                             <p class="m-0">"Sometime I wonder how I lived without it"</p>
                         </div>
                         <div class="review flex">
@@ -387,12 +403,15 @@
                         <div class="review flex">
                             <p class="m-0">"This is a nice review section"</p>
                         </div>
-                    </div>
-
-                    <div class="reviewContainerRow">
                         <div class="review flex">
                             <p class="m-0">"This is very good"</p>
                         </div>
+                        <div class="review flex">
+                            <p class="m-0">"I use the product very frequently"</p>
+                        </div>
+                    </div>
+
+                    <div class="reviewContainerRow">
                         <div class="review flex">
                             <p class="m-0">"I use the product very frequently"</p>
                         </div>
@@ -408,11 +427,19 @@
                         <div class="review flex">
                             <p class="m-0">"This is a nice review section"</p>
                         </div>
+                        <div class="review flex">
+                            <p class="m-0">"This is very good"</p>
+                        </div>
+
                     </div>
+
 
                     <div class="reviewContainerRow">
                         <div class="review flex">
                             <p class="m-0">"This is very good"</p>
+                        </div>
+                        <div class="review flex">
+                            <p class="m-0">"This is a nice review section"</p>
                         </div>
                         <div class="review flex">
                             <p class="m-0">"I use the product very frequently"</p>
@@ -425,31 +452,6 @@
                         </div>
                         <div class="review flex">
                             <p class="m-0">"I look forward to my workday now"</p>
-                        </div>
-                        <div class="review flex">
-                            <p class="m-0">"This is a nice review section"</p>
-                        </div>
-                    </div>
-
-
-                    <div class="reviewContainerRow">
-                        <div class="review flex">
-                            <p class="m-0">"This is very good"</p>
-                        </div>
-                        <div class="review flex">
-                            <p class="m-0">"I use the product very frequently"</p>
-                        </div>
-                        <div class="review flex">
-                            <p class="m-0">"Sometime I wonder how I lived without it"</p>
-                        </div>
-                        <div class="review flex">
-                            <p class="m-0">"Huge time saver"</p>
-                        </div>
-                        <div class="review flex">
-                            <p class="m-0">"I look forward to my workday now"</p>
-                        </div>
-                        <div class="review flex">
-                            <p class="m-0">"This is a nice review section"</p>
                         </div>
                     </div>
 
@@ -554,25 +556,160 @@
                     <p><a href="#">Self-Employed Tax Calculator</a></p>
                     <p><a href="#">Self Employed Tax Deductions</a></p>
                     <!-- Compairisons Dropdown -->
-                    <p><a href="#">Comparisons</a></p>
-                </div>
+                    <div class="footerDropDown">
+                        <button class="flex justify-space-between navPrim align-items-center p-0 m-0">
+                            <div>Comparisons</div>
+                            <div>&#8681;</div>
+                        </button>
+                        <div class="footerDrop inline-block">
+                            <ul class="p-0 block m-0">
+                                <li><a href="#" class="">Item 1</a></li>
+                                <li><a href="#" class="">Item 2</a></li>
+                                <li><a href="#" class="">Item 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
 
-                <div class="footerSection">
                     <h5>Templates</h5>
                     <!-- All of these are absolute dropdowns -->
-                    <p><a href="#">Contacts</a></p>
-                    <p><a href="#">Proposals</a></p>
-                    <p><a href="#">Invoices</a></p>
-                    <p><a href="#">Forms</a></p>
-                    <p><a href="#">Quotes</a></p>
-                    <p><a href="#">Scopes of Work</a></p>
-                    <p><a href="#">Agreements</a></p>
-                    <p><a href="#">Briefs</a></p>
+                    <!-- Dropdown -->
+                    <div class="footerDropDown">
+                        <button class="flex justify-space-between navPrim align-items-center p-0 m-0">
+                            <div>Contacts</div>
+                            <div>&#8681;</div>
+                        </button>
+                        <div class="footerDrop inline-block">
+                            <ul class="p-0 block m-0">
+                                <li><a href="#" class="">Item 1</a></li>
+                                <li><a href="#" class="">Item 2</a></li>
+                                <li><a href="#" class="">Item 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Dropdown -->
+                    <div class="footerDropDown">
+                        <button class="flex justify-space-between navPrim align-items-center p-0 m-0">
+                            <div>Proposals</div>
+                            <div>&#8681;</div>
+                        </button>
+                        <div class="footerDrop inline-block">
+                            <ul class="p-0 block m-0">
+                                <li><a href="#" class="">Item 1</a></li>
+                                <li><a href="#" class="">Item 2</a></li>
+                                <li><a href="#" class="">Item 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Dropdown -->
+                    <div class="footerDropDown">
+                        <button class="flex justify-space-between navPrim align-items-center p-0 m-0">
+                            <div>Invoices</div>
+                            <div>&#8681;</div>
+                        </button>
+                        <div class="footerDrop inline-block">
+                            <ul class="p-0 block m-0">
+                                <li><a href="#" class="">Item 1</a></li>
+                                <li><a href="#" class="">Item 2</a></li>
+                                <li><a href="#" class="">Item 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Dropdown -->
+                    <div class="footerDropDown">
+                        <button class="flex justify-space-between navPrim align-items-center p-0 m-0">
+                            <div>Forms</div>
+                            <div>&#8681;</div>
+                        </button>
+                        <div class="footerDrop inline-block">
+                            <ul class="p-0 block m-0">
+                                <li><a href="#" class="">Item 1</a></li>
+                                <li><a href="#" class="">Item 2</a></li>
+                                <li><a href="#" class="">Item 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Dropdown -->
+                    <div class="footerDropDown">
+                        <button class="flex justify-space-between navPrim align-items-center p-0 m-0">
+                            <div>Quotes</div>
+                            <div>&#8681;</div>
+                        </button>
+                        <div class="footerDrop inline-block">
+                            <ul class="p-0 block m-0">
+                                <li><a href="#" class="">Item 1</a></li>
+                                <li><a href="#" class="">Item 2</a></li>
+                                <li><a href="#" class="">Item 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Dropdown -->
+                    <div class="footerDropDown">
+                        <button class="flex justify-space-between navPrim align-items-center p-0 m-0">
+                            <div>Scopes of Work</div>
+                            <div>&#8681;</div>
+                        </button>
+                        <div class="footerDrop inline-block">
+                            <ul class="p-0 block m-0">
+                                <li><a href="#" class="">Item 1</a></li>
+                                <li><a href="#" class="">Item 2</a></li>
+                                <li><a href="#" class="">Item 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Dropdown -->
+                    <div class="footerDropDown">
+                        <button class="flex justify-space-between navPrim align-items-center p-0 m-0">
+                            <div>Agreements</div>
+                            <div>&#8681;</div>
+                        </button>
+                        <div class="footerDrop inline-block">
+                            <ul class="p-0 block m-0">
+                                <li><a href="#" class="">Item 1</a></li>
+                                <li><a href="#" class="">Item 2</a></li>
+                                <li><a href="#" class="">Item 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Dropdown -->
+                    <div class="footerDropDown">
+                        <button class="flex justify-space-between navPrim align-items-center p-0 m-0">
+                            <div>Briefs</div>
+                            <div>&#8681;</div>
+                        </button>
+                        <div class="footerDrop inline-block">
+                            <ul class="p-0 block m-0">
+                                <li><a href="#" class="">Item 1</a></li>
+                                <li><a href="#" class="">Item 2</a></li>
+                                <li><a href="#" class="">Item 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
             </div>
 
-            <div class="copyRight"></div>
+            <div class="copyRight">
+                <div class="flex flex-direction-column">
+                    <div class="flex justify-content-center socials topBar">
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/facebook-square.svg" alt="" width="50px" height="50px">
+                        </a>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/linkedin-square.svg" alt="" width="50px" height="50px">
+                        </a>
+                    </div>
+
+                    <div>
+                        <p class="m-0 opacity-50">&#169;DevBThom 2023</p>
+                        <p class="m-0 opacity-50">A well made website</p>
+                    </div>
+                </div>
+
+                <p class="opacity-50">&#169;2023 Lorem ipsum dolor, sit amet consectetur adipisicing elit. In modi quae,
+                    animi
+                    quis, rerum expedita suscipit corporis totam explicabo numquam aut rem, asperiores deleniti possimus
+                    facere sapiente aliquam sequi quasi?</p>
+            </div>
 
         </div>
     </footer>

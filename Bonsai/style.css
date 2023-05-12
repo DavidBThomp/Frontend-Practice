@@ -23,6 +23,10 @@ body {
     justify-content: space-between;
 }
 
+.justify-content-center {
+    justify-content: center;
+}
+
 .align-items-center {
     align-items: center;
 }
@@ -63,11 +67,16 @@ body {
     max-width: 75%;
 }
 
+.white {
+    color: white;
+}
+
 
 /* Nav Mobile */
 nav>div {
     padding: 15px;
     background-color: white;
+    z-index: 1;
 }
 
 .bar {
@@ -89,10 +98,10 @@ nav>div {
 
     position: absolute;
     width: 100%;
-    top: -454px;
+    top: -500px;
     right: 0;
     overflow: hidden;
-    z-index: -1;
+    z-index: 1;
 
     transition: top 300ms ease-in-out;
 }
@@ -316,7 +325,7 @@ nav button {
     height: 110px;
 }
 
-#touch1:checked ~ label div > .arrow{
+#touch1:checked~label div>.arrow {
     transform: rotate(180deg);
 }
 
@@ -324,7 +333,7 @@ nav button {
     height: 110px;
 }
 
-#touch2:checked ~ label div > div{
+#touch2:checked~label div>div {
     transform: rotate(180deg);
 }
 
@@ -332,7 +341,7 @@ nav button {
     height: 110px;
 }
 
-#touch3:checked ~ label div > div{
+#touch3:checked~label div>div {
     transform: rotate(180deg);
 }
 
@@ -340,12 +349,108 @@ nav button {
     height: 110px;
 }
 
-#touch4:checked ~ label div > div{
+#touch4:checked~label div>div {
     transform: rotate(180deg);
 }
 
 .arrow {
     transition: transform 0.2s ease;
+}
+
+/* Reviews + CTA */
+.border-right {
+    border-right: 1px solid #d3dcd4;
+}
+
+.reviews {
+    overflow: scroll;
+}
+
+.reviewContainerRow {
+    margin: 15px 0;
+
+    display: flex;
+    gap: 10px;
+}
+
+.review {
+    padding: 10px 5px;
+    border-radius: 10px;
+    background-color: #4c4d5f;
+}
+
+.review>p {
+    white-space: nowrap;
+}
+
+/* Contact and CTA section */
+#contactImg {
+    width: 100%;
+    height: auto;
+
+    /* This will be replaced with gap at larger screens I believe */
+    margin: 40px 0 0 0;
+}
+
+#cta {
+    background-color: #003c2f;
+    border-radius: 20px;
+    margin: 50px 0;
+}
+
+#cta p {
+    padding: 20px;
+}
+
+#cta button {
+    margin: 0 auto 20px;
+    max-width: 50%;
+
+}
+
+
+
+/* Footer */
+
+.footerDrop {
+    display: none;
+}
+
+.footerDropDown {
+    transition: transform 0.3s ease;
+}
+
+.footerDropDown:hover > .footerDrop {
+    display: inline-block;
+}
+
+.footerDropDown:hover {
+    transform: translateX(10px);
+}
+
+.footerDropDown > button {
+    background-color: white;
+    padding: 0;
+}
+
+.footerDropDown li,
+.footerDropDown ul,
+.footerDropDown a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.copyRight .socials {
+    margin: 40px 0 0 0;
+    padding: 40px 0 0 0;
+}
+
+.opacity-50 {
+    opacity: 0.5;
+}
+
+.copyRight > p:last-child {
+    padding: 0 0 75px 0;
 }
 
 /* Assets */
