@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap');
+
 :root {
     --primGreen: #22ad01;
     --secGreen: #003c2f;
     --primGrey: #4c4d5f;
     --primYellow: #f8db62;
-
 }
 
 * {
     box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 body {
@@ -15,6 +17,14 @@ body {
 }
 
 /* Utility Classes */
+.primary {
+    color: var(--primGreen)
+}
+
+.secondary {
+    color: var(--secGreen)
+}
+
 .flex {
     display: flex;
 }
@@ -69,6 +79,42 @@ body {
 
 .white {
     color: white;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.rem1 {
+    font-size: 1rem;
+}
+
+.rem2 {
+    font-size: 1.25rem;
+}
+
+.rem3 {
+    font-size: 1.5rem;
+}
+
+.rem4 {
+    font-size: 1.75rem;
+}
+
+.rem5 {
+    font-size: 2rem;
+}
+
+.opacity-50 {
+    opacity: 0.5;
+}
+
+.opacity-75 {
+    opacity: 0.75;
+}
+
+.marginrem1 {
+    margin: 1rem 0;
 }
 
 
@@ -151,11 +197,22 @@ nav button {
 }
 
 .button {
-    width: 100%;
     border-radius: 50px;
     padding: 10px 20px;
     font-weight: bold;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.freeStartButton {
+    align-self: center;
+    background-color: var(--primGreen);
+    color: white;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.freeStartButton:hover {
+    background-color: #00b33c;
 }
 
 .login {
@@ -190,7 +247,6 @@ nav button {
     display: flex;
     padding: 10px 20px;
     border-radius: 10px;
-    margin-bottom: 30px;
     justify-content: center;
     align-items: center;
 }
@@ -242,12 +298,16 @@ nav button {
 /* Pricing Card */
 .cardsContainer {
     flex-direction: column;
-    margin: 50px 0;
+    margin: 0 0 50px 0;
+}
+
+.padding1 {
+    padding: 10px
 }
 
 .price-card {
     margin: 10px 0;
-    padding: 20px;
+    padding: 35px 20px;
     flex-direction: column;
     box-shadow: 0 0 20px rgba(0, 0, 0, .1);
     position: relative;
@@ -255,7 +315,7 @@ nav button {
 }
 
 .cardItem {
-    gap: 20px;
+    gap: 15px;
     margin: 10px 0;
 }
 
@@ -376,11 +436,16 @@ nav button {
 .review {
     padding: 10px 5px;
     border-radius: 10px;
-    background-color: #4c4d5f;
+    background-color: #ecf1ec;
 }
 
 .review>p {
     white-space: nowrap;
+    padding: 5px;
+}
+
+.helper a {
+    color: var(--primGreen)
 }
 
 /* Contact and CTA section */
@@ -405,7 +470,6 @@ nav button {
 #cta button {
     margin: 0 auto 20px;
     max-width: 50%;
-
 }
 
 
@@ -420,7 +484,7 @@ nav button {
     transition: transform 0.3s ease;
 }
 
-.footerDropDown:hover > .footerDrop {
+.footerDropDown:hover>.footerDrop {
     display: inline-block;
 }
 
@@ -428,7 +492,7 @@ nav button {
     transform: translateX(10px);
 }
 
-.footerDropDown > button {
+.footerDropDown>button {
     background-color: white;
     padding: 0;
 }
@@ -440,6 +504,11 @@ nav button {
     text-decoration: none;
 }
 
+.footerDropDown>button>div:first-child {
+    font-size: 1rem;
+    opacity: 0.75;
+}
+
 .copyRight .socials {
     margin: 40px 0 0 0;
     padding: 40px 0 0 0;
@@ -449,9 +518,18 @@ nav button {
     opacity: 0.5;
 }
 
-.copyRight > p:last-child {
+.copyRight>p:last-child {
     padding: 0 0 75px 0;
 }
+
+.footerSection a {
+    text-decoration: none;
+    opacity: 0.75;
+    color: black;
+    font-size: 1rem;
+}
+
+
 
 /* Assets */
 .logo {
