@@ -536,3 +536,74 @@ nav button {
     width: 25px;
     height: 25px;
 }
+
+
+/* Media Queries */
+
+@media (min-width: 425px) {
+
+    .cardItem {
+        margin: 10px 50px;
+    }
+
+    .borderCard {
+        min-width: 320px;
+    }
+}
+
+.leaf {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    .container-padding {
+        padding: 0 50px;
+    }
+
+    .cardsContainer {
+        max-width: 560px;
+        margin: 0 auto;
+    }
+
+    .dropDown {
+        width: 75%;
+    }
+
+    .leaf {
+        display: inline-block;
+        position: absolute;
+        width: 55%;
+        height: auto;
+        top: 0;
+        bottom: -100px;
+        right: -200px;
+        margin: auto 0;
+        z-index: -1;
+        overflow: hidden;
+    }
+
+    #faq {
+        position: relative;
+    }
+
+    #contactImg {
+        display: block;
+        width: 560px;
+        margin: 15px auto 0;
+    }
+
+    .container-padding {
+        overflow: hidden;
+    }
+
+    .helper {
+        max-width: 560px;
+        margin: 0 auto;
+    }
+
+    #cta {
+        max-width: 560px;
+        margin: 50px auto;
+    }
+}
