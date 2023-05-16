@@ -139,8 +139,8 @@ nav>div {
 }
 
 .navBarLinks {
-    display: hidden;
     padding: 20px 40px;
+    background-color: white;
 
     position: absolute;
     width: 100%;
@@ -605,5 +605,93 @@ nav button {
     #cta {
         max-width: 560px;
         margin: 50px auto;
+    }
+}
+
+
+.secNav {display: none;}
+
+@media (min-width: 1024px) {
+    .mobileDrop {
+        display: none;
+    }
+
+    nav {
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+    }
+
+    nav>div {
+        max-width: 1400px;
+        padding: 0 50px;
+        margin: 0 auto;
+    }
+
+    .navBarLinks {
+        display: flex;
+        position: relative;
+
+        top: 0;
+        right: 0;
+
+        padding: 0 0 0 20px;
+
+        flex-direction: row;
+        justify-content: space-between;
+
+        overflow: visible;
+    }
+
+    .mainMenu {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .mainMenu .topBar {
+        border: none;
+    }
+
+    .navBarLinks>ul:last-child {
+        display: flex;
+        gap: 10px;
+    }
+
+    nav h1 {
+        white-space: nowrap;
+    }
+
+    .mainMenu li {
+        position: relative;
+        opacity: 0.76;
+    }
+
+    .dropDownProducts {
+        position: absolute;
+        display: none;
+        top: 40px;
+        left: 0;
+    }
+
+    .dropDownProducts:hover {
+        display: inline-block;
+        z-index: 1;
+    }
+
+    .secNav {
+        padding: 122px 50px;
+        border-top: 1px solid grey;
+        display: inline-block;
+        position: relative;
+
+    }
+
+    .secNav a {
+        text-decoration: none;
+        color: var(--secGreen);
+        padding: 20px 10px;
+        opacity: 0.75;
     }
 }
