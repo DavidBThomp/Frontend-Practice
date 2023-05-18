@@ -102,15 +102,18 @@
                     <li><a href="#"><button class="button startFree width-100">Start Free</button></a></li>
                 </ul>
             </div>
+        </div>
+
+        <div class="secNav">
+            <a href="#">Small Business</a>
+            <a href="#">Agencies</a>
+            <a href="#">Freelancers</a>
+        </div>
 
     </nav>
 
 
-    <div class="secNav">
-        <a href="#">Small Business</a>
-        <a href="#">Agencies</a>
-        <a href="#">Freelancers</a>
-    </div>
+
 
 
     <main>
@@ -282,7 +285,7 @@
                     </div>
 
                     <!-- Card -->
-                    <div class="flex borderCard">
+                    <div class="flex borderCard t">
                         <div class="">
                             <h4>Partners</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem omnis consectetur
@@ -326,7 +329,7 @@
                     </p>
                 </div>
 
-                <div class="dropDown">
+                <div class="dropDown topBar">
                     <input type="checkbox" name="touch" id="touch2" class="touch">
                     <label for="touch2"><span>
                             <div class="flex justify-space-between align-items-center">
@@ -342,7 +345,7 @@
                         Subscription settings.</p>
                 </div>
 
-                <div class="dropDown">
+                <div class="dropDown topBar">
                     <input type="checkbox" name="touch" id="touch3" class="touch">
                     <label for="touch3"><span>
                             <div class="flex justify-space-between align-items-center">
@@ -359,7 +362,7 @@
                     </p>
                 </div>
 
-                <div class="dropDown">
+                <div class="dropDown topBar">
                     <input type="checkbox" name="touch" id="touch4" class="touch">
                     <label for="touch4"><span>
                             <div class="flex justify-space-between align-items-center">
@@ -486,21 +489,24 @@
         <div class="container-padding">
             <!-- Contact and CTA -->
 
-            <img src="./images/headerImgContactUs.webp" alt="" width="900" height="900" id="contactImg">
+            <div class="flex imgText">
+                <img src="./images/headerImgContactUs.webp" alt="" width="900" height="900" id="contactImg">
 
-            <div class="flex flex-direction-column helper">
-                <div>
-                    <h4 class="rem3 secondary">Need help? <br>We can assist you.</h4>
-                    <p class="opacity-75">Our friendly, speedy, Customer Support has all the answers and is here to help
-                        you.</p>
-                    <p><a href="#">Contact Us</a></p>
-                </div>
-                <div class="topBar">
-                    <h4 class="rem3 secondary">Quick to setup <br> even easier to use.</h4>
-                    <p class="opacity-75">You get 7 days to try it for free. And if it's not what you expected, we
-                        guarantee your money
-                        back within the first two weeks.</p>
-                    <button class="button freeStartButton">Get Started</button>
+                <div class="flex flex-direction-column helper">
+                    <div>
+                        <h4 class="rem3 secondary">Need help? <br>We can assist you.</h4>
+                        <p class="opacity-75">Our friendly, speedy, Customer Support has all the answers and is here to
+                            help
+                            you.</p>
+                        <p><a href="#">Contact Us</a></p>
+                    </div>
+                    <div class="topBar">
+                        <h4 class="rem3 secondary">Quick to setup <br> even easier to use.</h4>
+                        <p class="opacity-75">You get 7 days to try it for free. And if it's not what you expected, we
+                            guarantee your money
+                            back within the first two weeks.</p>
+                        <button class="button freeStartButton">Get Started</button>
+                    </div>
                 </div>
             </div>
 
@@ -510,13 +516,14 @@
                     <button class="button freeStartButton"> Start Free Trial Now</button>
                 </div>
             </div>
+        </div>
 
         </div>
     </main>
 
     <footer>
         <div class="container-padding">
-            <div class="flex flex-direction-column">
+            <div class="flex flex-direction-column footerDivFlex">
 
                 <div class="footerSection">
                     <div class="company flex align-items-center">
@@ -599,6 +606,8 @@
                         </div>
                     </div>
 
+                </div>
+                <div class="footerSection">
                     <h5 class="rem2">Templates</h5>
                     <!-- All of these are absolute dropdowns -->
                     <!-- Dropdown -->
@@ -714,31 +723,32 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
-            <div class="copyRight">
-                <div class="flex flex-direction-column">
-                    <div class="flex justify-content-center socials topBar">
-                        <a href="#" rel="noopener noreferrer">
-                            <img src="./assets/facebook-square.svg" alt="" width="50px" height="50px">
-                        </a>
-                        <a href="https://www.linkedin.com/in/davidbthomp/" target="_blank" rel="noopener noreferrer">
-                            <img src="./assets/linkedin-square.svg" alt="" width="50px" height="50px">
-                        </a>
-                    </div>
+        </div>
 
-                    <div>
-                        <p class="m-0 opacity-50">&#169;DevBThom 2023</p>
-                        <p class="m-0 opacity-50">A well made website</p>
-                    </div>
+        <div class="copyRight">
+            <div class="flex flex-direction-column">
+                <div class="flex justify-content-center socials topBar">
+                    <a href="#" rel="noopener noreferrer">
+                        <img src="./assets/facebook-square.svg" alt="" width="50px" height="50px">
+                    </a>
+                    <a href="https://www.linkedin.com/in/davidbthomp/" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/linkedin-square.svg" alt="" width="50px" height="50px">
+                    </a>
                 </div>
 
-                <p class="opacity-50">&#169;2023 Lorem ipsum dolor, sit amet consectetur adipisicing elit. In modi quae,
-                    animi
-                    quis, rerum expedita suscipit corporis totam explicabo numquam aut rem, asperiores deleniti possimus
-                    facere sapiente aliquam sequi quasi?</p>
+                <div>
+                    <p class="m-0 opacity-50">&#169;DevBThom 2023</p>
+                    <p class="m-0 opacity-50">A well made website</p>
+                </div>
             </div>
+
+            <p class="opacity-50">&#169;2023 Lorem ipsum dolor, sit amet consectetur adipisicing elit. In modi quae,
+                animi
+                quis, rerum expedita suscipit corporis totam explicabo numquam aut rem, asperiores deleniti possimus
+                facere sapiente aliquam sequi quasi?</p>
+        </div>
 
         </div>
     </footer>
