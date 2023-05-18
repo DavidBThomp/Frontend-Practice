@@ -360,7 +360,8 @@ nav button {
 .horizontalFlex {
     flex-direction: row;
     gap: 25px;
-    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 /* FAQ Section */
@@ -423,7 +424,8 @@ nav button {
 }
 
 .reviews {
-    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 .reviewContainerRow {
@@ -622,6 +624,8 @@ nav button {
         position: fixed;
         width: 100%;
         z-index: 2;
+        background-color: white;
+        justify-content: none;
     }
 
     nav>div {
@@ -667,7 +671,6 @@ nav button {
 
     .mainMenu li {
         position: relative;
-        opacity: 0.76;
     }
 
     .dropDownProducts {
@@ -675,6 +678,7 @@ nav button {
         display: none;
         top: 40px;
         left: 0;
+        background-color: white;
     }
 
     .dropDownProducts:hover {
@@ -687,6 +691,7 @@ nav button {
         position: relative;
         width: 100%;
         padding: 0 50px;
+        z-index: -1;
     }
 
     .secNav a {
@@ -722,6 +727,7 @@ nav button {
     .imgText {
         gap: 20px;
         align-items: center;
+        flex-direction: row;
     }
 
     #cta {
@@ -734,4 +740,103 @@ nav button {
         justify-content: space-between;
         margin: 30px 0;
     }
+
+
+    .copyRight>div {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+
+    .copyRight .socials {
+        margin: 0;
+        padding: 0;
+        border: none;
+        align-items: center;
+    }
+
+    .footerCopy {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footerCopy p {
+        margin: 0 20px;
+    }
+
+    .copyRight>p:last-child {
+        padding: 25px 50px 75px;
+    }
+
+    .copyRight>p {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+
+    .title2 {
+        padding-top: 104px;
+    }
+
+    .copyRight {
+        padding: 75px 0 0 0;
+        border-top: 2px solid var(--primGrey);
+    }
+}
+
+@media (min-width: 1024px) {
+    .leaf {
+        top: 50px;
+        width: 50%;
+        z-index: 22;
+        right: -25%;
+    }
+
+    nav {
+        /* width: 100%;
+    background-color: white; */
+        z-index: 2;
+    }
+
+    .borderCard {
+        max-width: 400px;
+
+    }
+
+    .horizontalFlex {
+        justify-content: space-around;
+        max-width: 1400px;
+        margin: 0 auto;    
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    #faq {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .reviews {
+        max-width: 1400px;
+        margin: 0 auto;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .imgText {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    #cta {
+        max-width: 900px;;
+    }
+}
+
+@media (min-width: 1770px) {
+.leaf {
+    right: -400px;
+}
 }
