@@ -808,7 +808,7 @@ nav button {
     .horizontalFlex {
         justify-content: space-around;
         max-width: 1400px;
-        margin: 0 auto;    
+        margin: 0 auto;
         overflow-x: auto;
         overflow-y: hidden;
     }
@@ -831,12 +831,38 @@ nav button {
     }
 
     #cta {
-        max-width: 900px;;
+        max-width: 900px;
+        ;
     }
 }
 
 @media (min-width: 1770px) {
-.leaf {
-    right: -400px;
+    .leaf {
+        right: -400px;
+    }
 }
+
+
+/* Injection Button DevBThom */
+
+#devbthom {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color: #463F3A;
+    color: #F4F3EE;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: none;
+    border: none;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
 }
+
+#devbthom:hover {
+    background-color: #94877e;
+    color: white;
+    cursor: pointer;
+}
+
+/* End Button Injection */
