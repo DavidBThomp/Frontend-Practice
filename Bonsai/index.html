@@ -9,6 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Example pricing page. Links may not work.">
     <title>Pricing Page Example</title>
 
     <!-- CSS -->
@@ -16,6 +17,11 @@
 
     <!-- Favicon -->
     <link rel="icon" href="" type="image/x-icon">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -30,7 +36,7 @@
             </a>
 
             <div class="flex mobileDrop">
-                <a href="javascript:void(0);" onclick="navToggle()">
+                <a href="#" onclick="navToggle(); return false">
                     <div class="hamburger">
                         <div class="bar"></div>
                         <div class="bar"></div>
@@ -277,7 +283,7 @@
                     <!-- Card -->
                     <div class="flex borderCard">
                         <div class="">
-                            <h4>Collaborators </h4>
+                            <h2 class="rem1">Collaborators </h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem omnis consectetur
                                 corporis ipsa ea repellat doloribus iusto ut veniam!</p>
                         </div>
@@ -287,7 +293,7 @@
                     <!-- Card -->
                     <div class="flex borderCard t">
                         <div class="">
-                            <h4>Partners</h4>
+                            <h2 class="rem1">Partners</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem omnis consectetur
                                 corporis ipsa ea repellat doloribus iusto ut veniam!</p>
                         </div>
@@ -297,7 +303,7 @@
                     <!-- Card -->
                     <div class="flex borderCard">
                         <div class="">
-                            <h4>Tax Assistant</h4>
+                            <h2 class="rem1">Tax Assistant</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem omnis consectetur
                                 corporis ipsa ea repellat doloribus iusto ut veniam!</p>
                         </div>
@@ -494,14 +500,14 @@
 
                 <div class="flex flex-direction-column helper">
                     <div>
-                        <h4 class="rem3 secondary">Need help? <br>We can assist you.</h4>
+                        <h2 class="rem3 secondary">Need help? <br>We can assist you.</h2>
                         <p class="opacity-75">Our friendly, speedy, Customer Support has all the answers and is here to
                             help
                             you.</p>
                         <p><a href="#">Contact Us</a></p>
                     </div>
                     <div class="topBar">
-                        <h4 class="rem3 secondary">Quick to setup <br> even easier to use.</h4>
+                        <h2 class="rem3 secondary">Quick to setup <br> even easier to use.</h2>
                         <p class="opacity-75">You get 7 days to try it for free. And if it's not what you expected, we
                             guarantee your money
                             back within the first two weeks.</p>
